@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NMC_PATHAN</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="card">
+    <header class="head">
+      <div class="logo"><img src="../icons/nmc-48.png" alt="NMC" style="width:100%;height:100%;object-fit:cover;border-radius:10px;" onerror="this.remove();this.parentElement.textContent='NMC';" /></div>
+      <div class="titles">
+        <h1>NMC_PATHAN</h1>
+        <p class="sub">Robux &amp; UI Tweaks Suite</p>
+      </div>
+      <span id="live-dot" class="dot" title="Checking page…"></span>
+    </header>
+
+    <nav class="nav-tabs" role="tablist">
+      <button id="tab-btn-main" class="nav-tab active" type="button" role="tab" aria-selected="true" aria-controls="view-main">
+        <svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M15 9.5a3.5 3.5 0 0 0-7 0c0 4 7 2 7 6a3.5 3.5 0 0 1-7 0"/></svg>
+        <span>Robux</span>
+      </button>
+      <button id="tab-btn-reset" class="nav-tab" type="button" role="tab" aria-selected="false" aria-controls="view-reset">
+        <svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+        <span>Reset Data</span>
+      </button>
+    </nav>
+
+    <!-- Tab 1: Robux settings -->
+    <div id="view-main" class="tab-view active">
+      <div class="badge-toggles-wrapper">
+        <label class="label">Profile Badges</label>
+        <div class="badge-toggles-row">
+          <button id="toggle-roblox-plus" class="badge-toggle-btn" type="button" title="Toggle Roblox Plus Subscriber Icon">
+            <span class="badge-icon-wrap plus-icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" class="badge-svg">
+                <path d="M13.8555 2.5606C15.1824 1.81313 16.8176 1.81313 18.1445 2.5606L26.8555 7.46782C28.1824 8.21534 28.9999 9.59781 29 11.0928V20.9073C29 22.4024 28.1824 23.7847 26.8555 24.5323L18.1445 29.4395L17.8926 29.5704C16.6996 30.143 15.3004 30.143 14.1074 29.5704L13.8555 29.4395L11.0176 27.8409C10.3887 27.4864 10 26.8196 10 26.0977V12.001C10.0002 10.8967 10.8957 10.0012 12 10.001L20 10.0001C21.1044 10 21.9998 10.8957 22 12.0001V19.0001C22 20.1046 21.1046 21.0001 20 21.0001H16C15.4477 21.0001 15 20.5523 15 20.0001C15.0002 19.4479 15.4478 19.0001 16 19.0001H20V12.0001L12 12.001V26.0987L14.8369 27.6973C15.5545 28.1016 16.4455 28.1016 17.1631 27.6973L25.874 22.7891C26.5863 22.3877 27 21.6636 27 20.9073V11.0928C26.9999 10.3366 26.5863 9.61234 25.874 9.21099L17.1631 4.30278C16.4456 3.89864 15.5544 3.89864 14.8369 4.30278L6.12598 9.21099C5.41372 9.61234 5.00013 10.3366 5 11.0928V20.9073C5 21.6636 5.4137 22.3877 6.12598 22.7891L6.49023 22.9942C6.80495 23.1714 7 23.5051 7 23.8663C6.99984 24.6314 6.17549 25.1128 5.50879 24.7374L5.14453 24.5323C3.81763 23.7847 3 22.4024 3 20.9073V11.0928C3.00012 9.69126 3.71827 8.38846 4.90137 7.61528L5.14453 7.46782L13.8555 2.5606Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="badge-btn-text">Roblox Plus</span>
+            <span class="badge-indicator"></span>
+          </button>
+
+          <button id="toggle-verified-badge" class="badge-toggle-btn" type="button" title="Toggle Verified Blue Badge">
+            <span class="badge-icon-wrap verified-icon-wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 12 12" fill="none" class="badge-svg">
+                <g clip-path="url(#v-badge-clip)">
+                  <path fill="#0066ff" d="m2.523 0 9.476 2.539-2.54 9.476-9.475-2.54z"/>
+                  <path fill="#f7f7f8" fill-rule="evenodd" d="m8.804 3.75.003.003a.66.66 0 0 1 0 .932L5.064 8.428 3.193 6.556a.66.66 0 0 1 0-.932l.003-.003a.66.66 0 0 1 .932 0l.936.936L7.872 3.75a.66.66 0 0 1 .932 0" clip-rule="evenodd"/>
+                </g>
+                <defs><clipPath id="v-badge-clip"><path fill="#fff" d="M0 0h12v12H0z"/></clipPath></defs>
+              </svg>
+            </span>
+            <span class="badge-btn-text">Verified</span>
+            <span class="badge-indicator"></span>
+          </button>
+        </div>
+      </div>
+
+      <label class="label" for="robux-input">Robux amount</label>
+      <div class="field">
+        <span class="field-icon">R$</span>
+        <input
+          id="robux-input"
+          type="text"
+          inputmode="numeric"
+          placeholder="Enter robux amount"
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+
+      <div class="chips" id="chips">
+        <button class="chip" type="button" data-amount="100">100</button>
+        <button class="chip" type="button" data-amount="1000">1K</button>
+        <button class="chip" type="button" data-amount="10000">10K</button>
+        <button class="chip" type="button" data-amount="100000">100K</button>
+      </div>
+
+      <div class="actions">
+        <button id="apply-btn" class="btn primary" type="button" style="width: 100%;">Apply Amount</button>
+      </div>
+
+      <div class="meta">
+        <div class="meta-row"><span>Shown as</span><b id="shown">—</b></div>
+        <div class="meta-row"><span>Real balance</span><b id="real">—</b></div>
+      </div>
+
+      <div class="hist">
+        <span id="hist">No sent Robux yet</span>
+      </div>
+
+      <p id="status" class="status"></p>
+
+      <p class="note">Preview on roblox.com only — no Robux are actually transferred.</p>
+    </div>
+
+    <!-- Tab 2: Reset Data Center -->
+    <div id="view-reset" class="tab-view" style="display: none;">
+      <div class="reset-panel">
+        <div class="reset-card">
+          <div class="reset-details">
+            <div class="reset-name">Custom Robux</div>
+            <div class="reset-desc">Revert to real balance (<span id="reset-robux-val">—</span>)</div>
+          </div>
+          <button id="btn-reset-robux" class="btn-sub-reset" type="button">Reset</button>
+        </div>
+
+        <div class="reset-card">
+          <div class="reset-details">
+            <div class="reset-name">Sent Transactions</div>
+            <div class="reset-desc"><span id="reset-tx-val">0 records</span> saved</div>
+          </div>
+          <button id="btn-reset-tx" class="btn-sub-reset" type="button">Clear</button>
+        </div>
+
+        <div class="reset-card">
+          <div class="reset-details">
+            <div class="reset-name">Purchased Items</div>
+            <div class="reset-desc"><span id="reset-items-val">0 items</span> marked owned</div>
+          </div>
+          <button id="btn-reset-items" class="btn-sub-reset" type="button">Reset</button>
+        </div>
+
+        <div class="reset-card reset-card-all">
+          <div class="reset-details">
+            <div class="reset-name">Reset Everything</div>
+            <div class="reset-desc">Restore balance, transactions &amp; items</div>
+          </div>
+          <button id="btn-reset-all" class="btn-sub-reset danger" type="button">Reset All</button>
+        </div>
+      </div>
+      <p class="note" style="margin-top: 14px;">Use options above to individually or fully restore your original data.</p>
+    </div>
+
+    <!-- Ban Screen (shown only inside popup when user is banned) -->
+    <div id="view-banned" class="ban-view" style="display: none;" role="alert" aria-live="assertive">
+      <div class="ban-pill-top">SECURITY LOCKOUT</div>
+      <div class="ban-icon-wrap">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <h2 class="ban-title">ACCESS BANNED</h2>
+      <p class="ban-subtitle">Your extension access has been suspended by the administrator.</p>
+      <div class="ban-box">
+        <span class="ban-label">Ban Reason</span>
+        <p id="ban-reason-text" class="ban-reason">No reason provided.</p>
+      </div>
+      <div class="ban-box">
+        <span class="ban-label">Remaining Lockout Timer</span>
+        <div id="ban-timer-text" class="ban-timer">Permanent</div>
+      </div>
+      <p class="ban-foot">All custom Robux, badges, catalog items &amp; features have been reset and locked until unbanned.</p>
+    </div>
+
+    <!-- Version Expired Screen (shown when manifest.json version is not in backend allowedVersions) -->
+    <div id="view-version-expired" class="version-view" style="display: none;" role="alert" aria-live="assertive">
+      <div class="version-pill-top"><i class="fas fa-triangle-exclamation"></i> UPDATE REQUIRED</div>
+      <div class="version-icon-wrap">
+        <i class="fab fa-discord version-fa-discord" aria-hidden="true"></i>
+        <svg class="version-svg-discord" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+        </svg>
+      </div>
+      <h2 class="version-title">VERSION EXPIRE</h2>
+      <p id="version-expired-msg" class="version-subtitle">Version expire please get it from the discord</p>
+      <div class="version-box">
+        <span class="version-label">Installed Version</span>
+        <div id="version-expired-num" class="version-num">v1.0 (Outdated)</div>
+      </div>
+      <a id="discord-update-link" class="discord-btn" href="https://discord.gg/479vyZRYA" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-discord" aria-hidden="true"></i>
+        <svg class="discord-btn-svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+        </svg>
+        <span>Join Discord for New Version</span>
+      </a>
+      <p class="version-foot">https://discord.gg/479vyZRYA — This version is disabled until updated.</p>
+    </div>
+  </main>
+
+  <div id="snackbar" class="snackbar" role="status" aria-live="polite">
+    <div class="snackbar-text">
+      <span id="snack-text">History cleared</span>
+      <span class="snackbar-hint">Undo available for 10s</span>
+    </div>
+    <button id="undo-btn" class="undo" type="button">Undo</button>
+    <span class="snackbar-progress" aria-hidden="true"></span>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

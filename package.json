@@ -1,0 +1,14 @@
+{
+  "name": "eroblox-admin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "E.Roblox admin dashboard + Firebase Realtime Database tracking endpoint",
+  "main": "api/track.js",
+  "scripts": {
+    "start": "node test-server.js",
+    "test": "node ../Extension/test/tracker-regression.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
